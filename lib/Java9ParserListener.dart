@@ -1,4 +1,4 @@
-// Generated from Java9.g4 by ANTLR 4.8
+// Generated from Java9Parser.g4 by ANTLR 4.9.2
 // ignore_for_file: unused_import, unused_local_variable, prefer_single_quotes
 import 'package:antlr4/antlr4.dart';
 
@@ -6,7 +6,7 @@ import 'Java9Parser.dart';
 
 /// This abstract class defines a complete listener for a parse tree produced by
 /// [Java9Parser].
-abstract class Java9Listener extends ParseTreeListener {
+abstract class Java9ParserListener extends ParseTreeListener {
   /// Enter a parse tree produced by [Java9Parser.literal].
   /// [ctx] the parse tree
   void enterLiteral(LiteralContext ctx);

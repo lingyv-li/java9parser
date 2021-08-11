@@ -1,15 +1,15 @@
-// Generated from Java9.g4 by ANTLR 4.8
+// Generated from Java9Parser.g4 by ANTLR 4.9.2
 // ignore_for_file: unused_import, unused_local_variable, prefer_single_quotes
 import 'package:antlr4/antlr4.dart';
 
 import 'Java9Parser.dart';
-import 'Java9Listener.dart';
+import 'Java9ParserListener.dart';
 
 
-/// This class provides an empty implementation of [Java9Listener],
+/// This class provides an empty implementation of [Java9ParserListener],
 /// which can be extended to create a listener which only needs to handle
 /// a subset of the available methods.
-class Java9BaseListener implements Java9Listener {
+class Java9ParserBaseListener implements Java9ParserListener {
   /// The default implementation does nothing.
   @override
   void enterLiteral(LiteralContext ctx) {}

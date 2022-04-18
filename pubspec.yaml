@@ -1,14 +1,12 @@
 name: "my_project"
 dependencies:
-  antlr4:
-    git:
-      url: git@github.com:ansiemens/antlr4.git
-      ref: multi-platform
-      path: runtime/Dart
+  antlr4: 4.9.3
+
 dev_dependencies:
-  pedantic: ^1.0.0
-  build_runner: ^1.10.0
-  build_web_compilers: ^2.11.0
-  codemirror: ^0.6.4+5.62.2
+  lints: ^1.0.0
+  build_runner: ^2.1.10
+  build_web_compilers: ^3.2.3
+  codemirror: ^0.7.3+5.65.2
+
 environment:
   sdk: ">=2.12.0 <3.0.0"

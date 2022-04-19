@@ -40,7 +40,7 @@ void main() {
       options: options);
 
   querySelector('#submit')!.onClick.forEach((event) {
-    var errors = runParser(editor.getDoc()!.getValue()!);
+    var errors = runParser(editor.doc.getValue()!);
     if (errors.isNotEmpty) {
       querySelector('#output')!.text = 'Parser error: \n$errors';
     } else {

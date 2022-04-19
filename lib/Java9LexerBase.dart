@@ -28,11 +28,14 @@
  *  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  *  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+// ignore_for_file: file_names, non_constant_identifier_names
+
 import 'package:antlr4/antlr4.dart';
 import 'dart:convert';
 
 abstract class Java9LexerBase extends Lexer {
-  Java9LexerBase(CharStream input) : super(input) {}
+  Java9LexerBase(CharStream input) : super(input);
 
   bool Check1() {
     return Character.isJavaIdentifierStart(inputStream.LA(-1));
@@ -59,18 +62,15 @@ class Character {
       return false;
     }
     if (('a'.codeUnitAt(0) <= c && c <= 'z'.codeUnitAt(0)) ||
-        ('A'.codeUnitAt(0) <= c &&
-            c <= 'Z'.codeUnitAt(0))) {
+        ('A'.codeUnitAt(0) <= c && c <= 'Z'.codeUnitAt(0))) {
       return true;
     } else if (c == '\$'.codeUnitAt(0)) {
       return true;
     } else if (c == '_'.codeUnitAt(0)) {
       return true;
-    } else if ('0'.codeUnitAt(0) <= c &&
-        c <= '9'.codeUnitAt(0)) {
+    } else if ('0'.codeUnitAt(0) <= c && c <= '9'.codeUnitAt(0)) {
       return true;
-    } else if ('0'.codeUnitAt(0) <= c &&
-        c <= '9'.codeUnitAt(0)) {
+    } else if ('0'.codeUnitAt(0) <= c && c <= '9'.codeUnitAt(0)) {
       return true;
     }
     return false;
@@ -85,7 +85,9 @@ class Character {
       return true;
     } else if (c == '\$'.codeUnitAt(0)) {
       return true;
-    } else if (c == '_'.codeUnitAt(0)) return true;
+    } else if (c == '_'.codeUnitAt(0)) {
+      return true;
+    }
     return false;
   }
 

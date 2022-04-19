@@ -1,1 +1,8 @@
-include: package:pedantic/analysis_options.yaml
+include: package:lints/recommended.yaml
+
+analyzer:
+  exclude:
+    - lib/Java9Lexer.dart
+    - lib/Java9Parser.dart
+    - lib/Java9ParserBaseListener.dart
+    - lib/Java9ParserListener.dart
